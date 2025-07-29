@@ -1,0 +1,43 @@
+.admin-bets-page {
+  padding: 40px;
+  background: #f4f6f8;
+  min-height: 100vh;
+}
+
+.admin-bets-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #003366;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.bets-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.bets-table thead {
+  background-color: #007bff;
+  color: white;
+  text-align: left;
+}
+
+.bets-table th, 
+.bets-table td {
+  padding: 18px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.bets-table tr:hover {
+  background-color: #f1f5ff;
+}
+
+.bets-table td {
+  font-size: 16px;
+  color: #333;
+}

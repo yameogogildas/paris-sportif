@@ -1,0 +1,78 @@
+.blocked-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ff4e50, #f9d423);
+}
+
+.blocked-card {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+}
+
+.blocked-title {
+  color: #ff4e50;
+  margin-bottom: 20px;
+}
+
+.blocked-message {
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.blocked-instruction {
+  margin-bottom: 15px;
+}
+
+.blocked-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.blocked-textarea {
+  resize: none;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+
+.blocked-button {
+  background-color: #f9d423;
+  color: black;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.blocked-button:hover {
+  background-color: #f1c40f;
+}
+
+.blocked-feedback {
+  margin-top: 15px;
+  font-weight: bold;
+  color: green;
+}
+
+.blocked-link {
+  display: block;
+  margin-top: 20px;
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.blocked-link:hover {
+  text-decoration: underline;
+}

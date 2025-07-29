@@ -1,0 +1,204 @@
+/* AdminDashboard.css */
+
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  background: #000; /* Black background for the entire container */
+  color: #fff; /* White text color */
+}
+
+.sidebar {
+  width: 240px;
+  background-color: #111; /* Darker background for sidebar */
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: white; /* Sidebar title color */
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  cursor: pointer;
+  color: white; /* White text for links in sidebar */
+}
+
+.sidebar li:hover {
+  background-color: #333; /* Dark hover effect */
+}
+
+.sidebar li svg {
+  margin-right: 10px;
+  fill: white; /* White color for icons */
+}
+
+.admin-dashboard {
+  flex: 1;
+  padding: 30px;
+  background-color: #222; /* Slightly lighter black background for main content */
+}
+
+.dashboard-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #fff; /* White text for dashboard title */
+}
+
+.section-title {
+  font-size: 1.3rem;
+  margin: 30px 0 15px;
+  color: #ccc; /* Slightly lighter text for section titles */
+}
+
+.edit-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  background-color: #333; /* Dark background for form */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 220px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #fff; /* White text for form labels */
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid #555; /* Dark border for input fields */
+  border-radius: 5px;
+  background-color: #444; /* Darker background for input fields */
+  color: white; /* White text inside inputs */
+  outline: none;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: #fff; /* White background for buttons */
+  color: black; /* Black text for buttons */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.submit-button:hover {
+  background-color: #aaa; /* Light hover effect */
+}
+
+.match-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.match-item {
+  background-color: #333; /* Dark background for match items */
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+}
+
+.match-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.team-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.team-name {
+  font-weight: 600;
+  color: white; /* White text for team names */
+}
+
+.team-score {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff; /* White text for scores */
+}
+
+.match-status {
+  margin-left: auto;
+  font-weight: 600;
+  color: #fff; /* White text for match status */
+}
+
+.update-button,
+.deactivate-button {
+  padding: 5px 10px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.update-button {
+  background-color: #27ae60; /* Green button for update */
+  color: white; /* White text */
+}
+
+.deactivate-button {
+  background-color: black; /* Red button for deactivate */
+  color: white; /* White text */
+}
+
+.chart-container {
+  background-color: #333; /* Dark background for chart container */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-top: 40px;
+  min-height: 300px;
+  transition: none !important;
+}
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.team-score {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff; /* White text for scores */
+  margin: 0 10px;
+}

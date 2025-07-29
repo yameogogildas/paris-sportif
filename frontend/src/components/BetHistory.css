@@ -1,0 +1,25 @@
+.bet-history-page {
+  padding: 20px;
+  background-color: #f7f9fc;
+  min-height: 100vh;
+}
+
+.bet-history-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.bet-history-table th,
+.bet-history-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+.bet-history-table th {
+  background-color: #3498db;
+  color: white;
+  font-weight: bold;
+}

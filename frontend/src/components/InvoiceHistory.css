@@ -1,0 +1,59 @@
+/* 📄 Page des factures */
+.invoice-page {
+  padding: 40px;
+  background: #f5f7fa;
+  min-height: 100vh;
+}
+
+/* 🎯 Titre de la page */
+.invoice-title {
+  font-size: 32px;
+  color: #003366;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* 📄 Table des factures */
+.invoice-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.invoice-table th, .invoice-table td {
+  padding: 16px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.invoice-table th {
+  background-color: #0066cc;
+  color: white;
+  font-size: 16px;
+}
+
+.invoice-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.invoice-table a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.invoice-table a:hover {
+  text-decoration: underline;
+}
+
+/* 📭 Message si vide */
+.empty-invoice {
+  text-align: center;
+  font-size: 18px;
+  color: gray;
+  margin-top: 50px;
+}

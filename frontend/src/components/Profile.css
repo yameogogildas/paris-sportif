@@ -1,0 +1,76 @@
+/* Profile.css */
+.profile-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent; /* L'image gamblers sera visible derrière */
+}
+
+.profile-card {
+  background: rgba(0, 0, 0, 0.85);
+  padding: 40px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  color: #fff;
+}
+
+.profile-card h2 {
+  margin-bottom: 20px;
+  color: #FFD700; /* Doré */
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.profile-card p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.profile-card h3 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: #FFD700;
+}
+
+.profile-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.profile-card input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background-color: #111;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.profile-card input:focus {
+  border-color: #FFD700;
+}
+
+.profile-card button {
+  padding: 12px;
+  background-color: #FFD700;
+  border: none;
+  border-radius: 8px;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.profile-card button:hover {
+  background-color: #e5c100;
+  transform: translateY(-2px);
+}

@@ -1,0 +1,169 @@
+/* MatchList.css - Design professionnel avec alignement optimisé */
+
+/* 🎨 Général */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 🎯 Sidebar */
+.sidebar-btn {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  text-align: left;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.sidebar-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* 🏟️ Match Cards */
+.match-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.match-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.odd-button {
+  background: linear-gradient(to right, #ff0000, #cc0000);
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  border-radius: 50px;
+  padding: 8px 16px;
+  color: white;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.odd-button:hover {
+  transform: scale(1.05);
+  background-color: #ff4d4d !important;
+}
+
+.odd-button:active {
+  transform: scale(0.95);
+}
+
+/* 💼 Panier */
+.bet-button:hover {
+  background-color: #00cc66 !important;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .top-nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .sidebar-btn {
+    font-size: 14px;
+  }
+
+  .match-card {
+    width: 95vw !important;
+    height: auto;
+  }
+
+  .coupon {
+    display: block !important;
+    width: 100%;
+    margin-top: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    background: rgba(0, 34, 68, 0.95);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 20px;
+  }
+}
+
+/* 👤 Profil Hover */
+.top-right:hover img {
+  outline: 2px solid #00aaff;
+}
+
+/* 💡 Transition douce */
+input, button {
+  transition: all 0.2s ease-in-out;
+}
+
+/* 🎟️ Coupon */
+.coupon {
+  border-radius: 16px;
+  background: #01203a;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  padding: 25px;
+  margin-top: 30px;
+}
+
+/* 🏅 Titre catégorie sport */
+h3 {
+  font-size: 20px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  color: #00c8ff;
+  border-left: 4px solid #00c8ff;
+  padding-left: 10px;
+  font-weight: 600;
+}
+
+/* ✅ Détails de match alignés */
+.match-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.match-details label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.match-details input[type="checkbox"] {
+  transform: scale(1.2);
+}
+
+.match-details input[type="number"] {
+  width: 100%;
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.match-details button {
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.match-details button:hover {
+  background-color: #00cc66;
+}

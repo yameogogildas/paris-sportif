@@ -1,0 +1,57 @@
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5); /* filtre sombre 50% */
+  z-index: -1; /* Entre l'image et ton contenu */
+}
+
+/* Pour tout ton contenu */
+.App, .app-content {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* Formulaires, boutons, champs */
+form {
+  background-color: rgba(255, 255, 255, 0.1); /* Blanc transparent */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px); /* Flou derrière */
+}
+
+input, select, button {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Adaptatif Mobile */
+@media (max-width: 768px) {
+  form {
+    width: 90%;
+  }
+}
